@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSAHNOUNI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1 id="site-name">MSAHNOUNI</h1> <!-- اسم الموقع -->
+      <h2 id="site-title">Moussa SAHNOUNI</h2> <!-- عنوان عريض -->
+    </div>
+
+    <form id="uploadForm">
+      <!-- الاسم الشخصي -->
+      <div class="input-group">
+        <label for="prenom">الاسم الشخصي (باللغة العربية) <span class="required">*</span>:</label>
+        <input type="text" id="prenom" name="prenom" placeholder="أدخل الاسم الشخصي" required>
+      </div>
+
+      <!-- الاسم العائلي -->
+      <div class="input-group">
+        <label for="nom">Nom de famille (بالفرنسية) <span class="required">*</span>:</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez votre nom de famille" required>
+      </div>
+
+      <!-- تاريخ الازدياد -->
+      <div class="input-group">
+        <label for="dateNaissance">تاريخ الازدياد <span class="required">*</span>:</label>
+        <input type="date" id="dateNaissance" name="dateNaissance" required>
+      </div>
+
+      <!-- تحميل الملفات -->
+      <h3>تحميل الملفات:</h3>
+
+      <div class="input-group">
+        <label for="file1">الملف الأول (رسالة اعتذار) <span class="required">*</span>:</label>
+        <input type="file" id="file1" name="file1" accept=".pdf,.jpg,.jpeg,.png" required>
+      </div>
+
+      <div class="input-group">
+        <label for="file2">الملف الثاني (رسالة تحفيزية) <span class="required">*</span>:</label>
+        <input type="file" id="file2" name="file2" accept=".pdf,.jpg,.jpeg,.png" required>
+      </div>
+
+      <div class="input-group">
+        <label for="file3">الملف الثالث (إلتزام خطي) <span class="required">*</span>:</label>
+        <input type="file" id="file3" name="file3" accept=".pdf,.jpg,.jpeg,.png" required>
+      </div>
+
+      <button type="submit">إرسال</button>
+    </form>
+
+    <p class="warning">⚠️ كل معلومة خاطئة تؤدي إلى إلغاء الطلب.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

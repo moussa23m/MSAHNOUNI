@@ -1,0 +1,104 @@
+﻿/* إعدادات عامة للخط والخلفية */
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: url('https://www.transparenttextures.com/patterns/diagmonds.png'); /* صورة خلفية خفيفة */
+  background-color: #f0f8ff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* ظل جميل لواجهة احترافية */
+  text-align: center;
+  width: 90%;
+  max-width: 600px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+#site-name {
+  font-size: 36px;
+  font-weight: bold;
+  animation: colorChange 3s infinite;
+  letter-spacing: 2px;
+}
+
+#site-title {
+  font-size: 28px;
+  font-weight: bold;
+  animation: colorChange 3s infinite alternate;
+  margin-bottom: 20px;
+}
+
+@keyframes colorChange {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: green; }
+  75% { color: orange; }
+  100% { color: purple; }
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"], input[type="date"], input[type="file"] {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+.warning {
+  color: red;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+/* النجمات الحمراء للحقل المطلوب */
+.required {
+  color: red;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
