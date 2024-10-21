@@ -14,12 +14,12 @@
   alert("✅ تم إرسال الملفات بنجاح!");
   // إعداد Firebase
 const firebaseConfig = {
-    apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-    databaseURL: "https://YOUR_PROJECT_ID.firebaseio.com",
-    projectId: "YOUR_PROJECT_ID",
-    storageBucket: "YOUR_PROJECT_ID.appspot.com",
-    messagingSenderId: "YOUR_SENDER_ID",
+    apiKey: "msahnouni-c3fcf",
+    authDomain: "msahnouni.firebaseapp.com",
+    databaseURL: "https://msahnouni.firebaseio.com",
+    projectId: "msahnouni-c3fcf",
+    storageBucket: "msahnouni.appspot.com",
+    messagingSenderId: "757108100880",
     appId: "YOUR_APP_ID"
 };
 
